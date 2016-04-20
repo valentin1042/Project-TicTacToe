@@ -2,6 +2,12 @@
     Public name As String = ""
     Private guest As String = "guest"
     Public turnNumber As Integer = 0
+    'Constructor 
+    Public Sub New()
+        name = ""
+        guest = "guest"
+        turnNumber = 0
+    End Sub
     'Register
     'Lets player register a new username
     'Procedure:
