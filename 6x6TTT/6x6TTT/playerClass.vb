@@ -1,13 +1,15 @@
 ﻿Public Class playerClass
     Public name As String = ""
-    Private guest As String = "guest"
+    'Private guest As String = "guest"
     Public turnNumber As Integer = 0
+
     'Constructor 
     Public Sub New()
         name = ""
-        guest = "guest"
+        'guest = "guest"
         turnNumber = 0
     End Sub
+
     'Register
     'Lets player register a new username
     'Procedure:
@@ -18,6 +20,9 @@
     'Returns:
     '   Display success
     Public Sub Register()
+        'Using usernameFile As New System.IO.StreamWriter("username.txt")
+        '    usernameFile.WriteLine(username)
+        'End Using
     End Sub
     'Log in
     'Lets player login with username
@@ -39,6 +44,6 @@
     'Returns:
     '   Display success
     Public Sub setVader()
-
+        name = "Vader"
     End Sub
 End Class

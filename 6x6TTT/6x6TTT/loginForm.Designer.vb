@@ -22,49 +22,32 @@ Partial Class loginMenuForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.usernameLabel = New System.Windows.Forms.Label()
-        Me.guestLabel = New System.Windows.Forms.Label()
+        Me.usernameTextBox = New System.Windows.Forms.TextBox()
+        Me.guestRadioButton = New System.Windows.Forms.RadioButton()
         Me.enterButton = New System.Windows.Forms.Button()
         Me.backButton = New System.Windows.Forms.Button()
+        Me.errorLabel = New System.Windows.Forms.Label()
+        Me.enterUsernameLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'usernameTextBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(39, 63)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(123, 22)
-        Me.TextBox1.TabIndex = 0
+        Me.usernameTextBox.Location = New System.Drawing.Point(39, 63)
+        Me.usernameTextBox.MaxLength = 25
+        Me.usernameTextBox.Name = "usernameTextBox"
+        Me.usernameTextBox.Size = New System.Drawing.Size(143, 22)
+        Me.usernameTextBox.TabIndex = 0
         '
-        'RadioButton1
+        'guestRadioButton
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(39, 133)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(71, 21)
-        Me.RadioButton1.TabIndex = 1
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Guest "
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'usernameLabel
-        '
-        Me.usernameLabel.AutoSize = True
-        Me.usernameLabel.Location = New System.Drawing.Point(36, 43)
-        Me.usernameLabel.Name = "usernameLabel"
-        Me.usernameLabel.Size = New System.Drawing.Size(109, 17)
-        Me.usernameLabel.TabIndex = 2
-        Me.usernameLabel.Text = "Enter username"
-        '
-        'guestLabel
-        '
-        Me.guestLabel.AutoSize = True
-        Me.guestLabel.Location = New System.Drawing.Point(36, 113)
-        Me.guestLabel.Name = "guestLabel"
-        Me.guestLabel.Size = New System.Drawing.Size(93, 17)
-        Me.guestLabel.TabIndex = 3
-        Me.guestLabel.Text = "Play as guest"
+        Me.guestRadioButton.AutoSize = True
+        Me.guestRadioButton.Location = New System.Drawing.Point(39, 116)
+        Me.guestRadioButton.Name = "guestRadioButton"
+        Me.guestRadioButton.Size = New System.Drawing.Size(71, 21)
+        Me.guestRadioButton.TabIndex = 1
+        Me.guestRadioButton.TabStop = True
+        Me.guestRadioButton.Text = "Guest "
+        Me.guestRadioButton.UseVisualStyleBackColor = True
         '
         'enterButton
         '
@@ -85,6 +68,25 @@ Partial Class loginMenuForm
         Me.backButton.Text = "Back"
         Me.backButton.UseVisualStyleBackColor = True
         '
+        'errorLabel
+        '
+        Me.errorLabel.AutoSize = True
+        Me.errorLabel.Location = New System.Drawing.Point(39, 94)
+        Me.errorLabel.Name = "errorLabel"
+        Me.errorLabel.Size = New System.Drawing.Size(119, 17)
+        Me.errorLabel.TabIndex = 6
+        Me.errorLabel.Text = "Invalid username "
+        Me.errorLabel.Visible = False
+        '
+        'enterUsernameLabel
+        '
+        Me.enterUsernameLabel.AutoSize = True
+        Me.enterUsernameLabel.Location = New System.Drawing.Point(42, 44)
+        Me.enterUsernameLabel.Name = "enterUsernameLabel"
+        Me.enterUsernameLabel.Size = New System.Drawing.Size(109, 17)
+        Me.enterUsernameLabel.TabIndex = 7
+        Me.enterUsernameLabel.Text = "Enter username"
+        '
         'loginMenuForm
         '
         Me.AcceptButton = Me.enterButton
@@ -93,12 +95,12 @@ Partial Class loginMenuForm
         Me.CancelButton = Me.backButton
         Me.ClientSize = New System.Drawing.Size(374, 233)
         Me.ControlBox = False
+        Me.Controls.Add(Me.enterUsernameLabel)
+        Me.Controls.Add(Me.errorLabel)
         Me.Controls.Add(Me.backButton)
         Me.Controls.Add(Me.enterButton)
-        Me.Controls.Add(Me.guestLabel)
-        Me.Controls.Add(Me.usernameLabel)
-        Me.Controls.Add(Me.RadioButton1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.guestRadioButton)
+        Me.Controls.Add(Me.usernameTextBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "loginMenuForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -107,10 +109,10 @@ Partial Class loginMenuForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
-    Friend WithEvents usernameLabel As System.Windows.Forms.Label
-    Friend WithEvents guestLabel As System.Windows.Forms.Label
+    Friend WithEvents usernameTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents guestRadioButton As System.Windows.Forms.RadioButton
     Friend WithEvents enterButton As System.Windows.Forms.Button
     Friend WithEvents backButton As System.Windows.Forms.Button
+    Friend WithEvents errorLabel As System.Windows.Forms.Label
+    Friend WithEvents enterUsernameLabel As System.Windows.Forms.Label
 End Class
