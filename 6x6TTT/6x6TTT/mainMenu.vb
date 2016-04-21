@@ -15,7 +15,8 @@
     '   Username for player 2
     Private Sub vsPlayerBtn_Click(sender As Object, e As EventArgs) Handles vsPlayerBtn.Click
         Me.Hide()
-        setupMenu.Show()
+        loginMenuForm.Show()
+        'setupMenu.Show()
     End Sub
 
     'vsVaderButton
@@ -26,7 +27,7 @@
     '   Username for player
     Private Sub vsVaderBtn_Click(sender As Object, e As EventArgs) Handles vsVaderBtn.Click
         Me.Hide()
-        setupMenu.Show()
+        loginMenuForm.Show()
     End Sub
 
     'Register Button
@@ -37,7 +38,8 @@
     'Returns: 
     '   Registration complete
     Private Sub registerBtn_Click(sender As Object, e As EventArgs) Handles registerBtn.Click
-
+        Me.Hide()
+        scoreMenuForm.Show()
     End Sub
 
     'History Button

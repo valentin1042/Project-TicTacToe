@@ -1,4 +1,4 @@
-﻿Public Class setupMenu
+﻿Public Class setupMenuForm
 
     Dim count As Integer = 2                'Holds the number of colors that can be choosen
     '*Dim cStone(2) As Drawing.Color         Changed cStone array data type to string 

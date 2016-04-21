@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class setupMenu
+Partial Class setupMenuForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -199,7 +199,7 @@ Partial Class setupMenu
         Me.player1RadioButton.Text = "player 1"
         Me.player1RadioButton.UseVisualStyleBackColor = True
         '
-        'setupMenu
+        'setupMenuForm
         '
         Me.AcceptButton = Me.enterButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -212,9 +212,9 @@ Partial Class setupMenu
         Me.Controls.Add(Me.enterButton)
         Me.Controls.Add(Me.backButton)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Name = "setupMenu"
+        Me.Name = "setupMenuForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Setup Menu"
+        Me.Text = "Settings "
         Me.chooseDifficultyGroupBox.ResumeLayout(False)
         Me.chooseDifficultyGroupBox.PerformLayout()
         Me.chooseColorGroupBox.ResumeLayout(False)

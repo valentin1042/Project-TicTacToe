@@ -18,7 +18,6 @@
     'Returns:
     '   Display success
     Public Sub Register()
-
     End Sub
     'Log in
     'Lets player login with username

@@ -71,11 +71,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="boardClass.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="loginForm.Designer.vb">
+      <DependentUpon>loginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="mainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainMenu.Designer.vb">
+      <DependentUpon>mainMenu.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="historyClass.vb" />
@@ -95,6 +101,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="playerClass.vb" />
+    <Compile Include="scoreMenu.designer.vb">
+      <DependentUpon>scoreMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scoreMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="setupMenu.Designer.vb">
       <DependentUpon>setupMenu.vb</DependentUpon>
     </Compile>
@@ -103,14 +115,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainMenu.resx">
+      <DependentUpon>mainMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scoreMenu.resx">
+      <DependentUpon>scoreMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="setupMenu.resx">
       <DependentUpon>setupMenu.vb</DependentUpon>
