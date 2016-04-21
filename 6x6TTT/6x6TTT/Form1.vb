@@ -1,5 +1,6 @@
 ﻿Public Class mainMenuForm
-
+    'Remove after adding gameboard form
+    Public Board As boardClass = New boardClass()
     Private Sub exitBtn_Click(sender As Object, e As EventArgs) Handles exitBtn.Click
         Me.Close()
     End Sub
@@ -13,7 +14,8 @@
     '   Username for player 1 
     '   Username for player 2
     Private Sub vsPlayerBtn_Click(sender As Object, e As EventArgs) Handles vsPlayerBtn.Click
-
+        Me.Hide()
+        setupMenu.Show()
     End Sub
 
     'vsVaderButton
@@ -23,7 +25,8 @@
     'Returns:
     '   Username for player
     Private Sub vsVaderBtn_Click(sender As Object, e As EventArgs) Handles vsVaderBtn.Click
-
+        Me.Hide()
+        setupMenu.Show()
     End Sub
 
     'Register Button
@@ -48,4 +51,5 @@
     Private Sub historyBtn_Click(sender As Object, e As EventArgs) Handles historyBtn.Click
 
     End Sub
+
 End Class
