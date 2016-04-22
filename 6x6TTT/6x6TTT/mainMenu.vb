@@ -45,11 +45,12 @@
     '   Registration complete
     Private Sub registerBtn_Click(sender As Object, e As EventArgs) Handles registerBtn.Click
         Me.Hide()
-        'Has to display modified log in menu once 
-        loginMenuForm.guestRadioButton.Visible = False
-        loginMenuForm.Text = "Register"
-        loginMenuForm.Show()
-        'Board.player1.Register()
+        Form1.Show()
+        ''Has to display modified log in menu once 
+        'loginMenuForm.guestRadioButton.Visible = False
+        'loginMenuForm.Text = "Register"
+        'loginMenuForm.Show()
+        ''Board.player1.Register()
     End Sub
 
     'History Button
