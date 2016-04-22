@@ -1,5 +1,5 @@
 ﻿Public Class boardClass
-    Public vaderFlag As Integer
+    Private vaderFlag As Integer
     Private stone(2) As String
     Private board(6, 6) As Integer
     Public player1 As playerClass = New playerClass()
@@ -19,10 +19,6 @@
 
     Public Sub setDifficulty(ByVal Vader As Integer)
         vaderFlag = Vader
-        '0 = no vader
-        '1 = easyVader
-        '2 = mediumVader
-        '3 = hardVader
     End Sub
 
     Public Sub setPlayer(ByVal Name1 As String, ByVal Name2 As String)

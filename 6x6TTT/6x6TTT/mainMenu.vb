@@ -18,10 +18,8 @@
     Private Sub vsPlayerBtn_Click(sender As Object, e As EventArgs) Handles vsPlayerBtn.Click
         Me.Hide()
         'Has to display log in menu twice
-        'loginMenuForm.setCount(2)
-        'loginMenuForm.Show()
-        setupMenuForm.Show()
-
+        loginMenuForm.setCount(2)
+        loginMenuForm.Show()
     End Sub
 
     'vsVaderButton
@@ -47,7 +45,7 @@
     '   Registration complete
     Private Sub registerBtn_Click(sender As Object, e As EventArgs) Handles registerBtn.Click
         Me.Hide()
-        Registration.Show()
+        Form1.Show()
         ''Has to display modified log in menu once 
         'loginMenuForm.guestRadioButton.Visible = False
         'loginMenuForm.Text = "Register"

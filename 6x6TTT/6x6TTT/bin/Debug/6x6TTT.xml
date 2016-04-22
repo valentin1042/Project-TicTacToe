@@ -15,19 +15,7 @@
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
-</member><member name="P:_6x6TTT.My.Resources.Resources.blue">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
 </member><member name="P:_6x6TTT.My.Resources.Resources.Darth_Vader">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:_6x6TTT.My.Resources.Resources.green">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:_6x6TTT.My.Resources.Resources.red">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

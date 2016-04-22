@@ -44,20 +44,18 @@ Partial Class setupMenuForm
         'backButton
         '
         Me.backButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.backButton.Location = New System.Drawing.Point(375, 75)
-        Me.backButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.backButton.Location = New System.Drawing.Point(250, 48)
         Me.backButton.Name = "backButton"
-        Me.backButton.Size = New System.Drawing.Size(136, 55)
+        Me.backButton.Size = New System.Drawing.Size(91, 35)
         Me.backButton.TabIndex = 12
         Me.backButton.Text = "Back"
         Me.backButton.UseVisualStyleBackColor = True
         '
         'enterButton
         '
-        Me.enterButton.Location = New System.Drawing.Point(375, 212)
-        Me.enterButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.enterButton.Location = New System.Drawing.Point(250, 136)
         Me.enterButton.Name = "enterButton"
-        Me.enterButton.Size = New System.Drawing.Size(136, 55)
+        Me.enterButton.Size = New System.Drawing.Size(91, 35)
         Me.enterButton.TabIndex = 13
         Me.enterButton.Text = "Enter"
         Me.enterButton.UseVisualStyleBackColor = True
@@ -67,11 +65,9 @@ Partial Class setupMenuForm
         Me.chooseDifficultyGroupBox.Controls.Add(Me.hardRadioButton)
         Me.chooseDifficultyGroupBox.Controls.Add(Me.medRadioButton)
         Me.chooseDifficultyGroupBox.Controls.Add(Me.easyRadioButton)
-        Me.chooseDifficultyGroupBox.Location = New System.Drawing.Point(34, 574)
-        Me.chooseDifficultyGroupBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.chooseDifficultyGroupBox.Location = New System.Drawing.Point(0, 3)
         Me.chooseDifficultyGroupBox.Name = "chooseDifficultyGroupBox"
-        Me.chooseDifficultyGroupBox.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.chooseDifficultyGroupBox.Size = New System.Drawing.Size(316, 197)
+        Me.chooseDifficultyGroupBox.Size = New System.Drawing.Size(211, 126)
         Me.chooseDifficultyGroupBox.TabIndex = 14
         Me.chooseDifficultyGroupBox.TabStop = False
         Me.chooseDifficultyGroupBox.Text = "Difficulty"
@@ -80,10 +76,9 @@ Partial Class setupMenuForm
         'hardRadioButton
         '
         Me.hardRadioButton.AutoSize = True
-        Me.hardRadioButton.Location = New System.Drawing.Point(74, 136)
-        Me.hardRadioButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.hardRadioButton.Location = New System.Drawing.Point(49, 87)
         Me.hardRadioButton.Name = "hardRadioButton"
-        Me.hardRadioButton.Size = New System.Drawing.Size(89, 29)
+        Me.hardRadioButton.Size = New System.Drawing.Size(60, 21)
         Me.hardRadioButton.TabIndex = 3
         Me.hardRadioButton.TabStop = True
         Me.hardRadioButton.Text = "Hard"
@@ -92,10 +87,9 @@ Partial Class setupMenuForm
         'medRadioButton
         '
         Me.medRadioButton.AutoSize = True
-        Me.medRadioButton.Location = New System.Drawing.Point(74, 94)
-        Me.medRadioButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.medRadioButton.Location = New System.Drawing.Point(49, 60)
         Me.medRadioButton.Name = "medRadioButton"
-        Me.medRadioButton.Size = New System.Drawing.Size(119, 29)
+        Me.medRadioButton.Size = New System.Drawing.Size(78, 21)
         Me.medRadioButton.TabIndex = 2
         Me.medRadioButton.TabStop = True
         Me.medRadioButton.Text = "Medium"
@@ -104,10 +98,9 @@ Partial Class setupMenuForm
         'easyRadioButton
         '
         Me.easyRadioButton.AutoSize = True
-        Me.easyRadioButton.Location = New System.Drawing.Point(74, 52)
-        Me.easyRadioButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.easyRadioButton.Location = New System.Drawing.Point(49, 33)
         Me.easyRadioButton.Name = "easyRadioButton"
-        Me.easyRadioButton.Size = New System.Drawing.Size(91, 29)
+        Me.easyRadioButton.Size = New System.Drawing.Size(60, 21)
         Me.easyRadioButton.TabIndex = 1
         Me.easyRadioButton.TabStop = True
         Me.easyRadioButton.Text = "Easy"
@@ -120,11 +113,9 @@ Partial Class setupMenuForm
         Me.chooseColorGroupBox.Controls.Add(Me.greenRadioButton)
         Me.chooseColorGroupBox.Controls.Add(Me.yellowRadioButton)
         Me.chooseColorGroupBox.Controls.Add(Me.blueRadioButton)
-        Me.chooseColorGroupBox.Location = New System.Drawing.Point(32, 55)
-        Me.chooseColorGroupBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.chooseColorGroupBox.Location = New System.Drawing.Point(21, 35)
         Me.chooseColorGroupBox.Name = "chooseColorGroupBox"
-        Me.chooseColorGroupBox.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.chooseColorGroupBox.Size = New System.Drawing.Size(334, 253)
+        Me.chooseColorGroupBox.Size = New System.Drawing.Size(223, 162)
         Me.chooseColorGroupBox.TabIndex = 15
         Me.chooseColorGroupBox.TabStop = False
         Me.chooseColorGroupBox.Text = "Choose your color"
@@ -133,10 +124,9 @@ Partial Class setupMenuForm
         'redRadioButton
         '
         Me.redRadioButton.AutoSize = True
-        Me.redRadioButton.Location = New System.Drawing.Point(84, 181)
-        Me.redRadioButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.redRadioButton.Location = New System.Drawing.Point(56, 116)
         Me.redRadioButton.Name = "redRadioButton"
-        Me.redRadioButton.Size = New System.Drawing.Size(82, 29)
+        Me.redRadioButton.Size = New System.Drawing.Size(55, 21)
         Me.redRadioButton.TabIndex = 3
         Me.redRadioButton.TabStop = True
         Me.redRadioButton.Text = "Red"
@@ -145,10 +135,9 @@ Partial Class setupMenuForm
         'greenRadioButton
         '
         Me.greenRadioButton.AutoSize = True
-        Me.greenRadioButton.Location = New System.Drawing.Point(84, 139)
-        Me.greenRadioButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.greenRadioButton.Location = New System.Drawing.Point(56, 89)
         Me.greenRadioButton.Name = "greenRadioButton"
-        Me.greenRadioButton.Size = New System.Drawing.Size(102, 29)
+        Me.greenRadioButton.Size = New System.Drawing.Size(69, 21)
         Me.greenRadioButton.TabIndex = 2
         Me.greenRadioButton.TabStop = True
         Me.greenRadioButton.Text = "Green"
@@ -157,10 +146,9 @@ Partial Class setupMenuForm
         'yellowRadioButton
         '
         Me.yellowRadioButton.AutoSize = True
-        Me.yellowRadioButton.Location = New System.Drawing.Point(84, 97)
-        Me.yellowRadioButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.yellowRadioButton.Location = New System.Drawing.Point(56, 62)
         Me.yellowRadioButton.Name = "yellowRadioButton"
-        Me.yellowRadioButton.Size = New System.Drawing.Size(107, 29)
+        Me.yellowRadioButton.Size = New System.Drawing.Size(69, 21)
         Me.yellowRadioButton.TabIndex = 1
         Me.yellowRadioButton.TabStop = True
         Me.yellowRadioButton.Text = "Yellow"
@@ -169,10 +157,9 @@ Partial Class setupMenuForm
         'blueRadioButton
         '
         Me.blueRadioButton.AutoSize = True
-        Me.blueRadioButton.Location = New System.Drawing.Point(84, 55)
-        Me.blueRadioButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.blueRadioButton.Location = New System.Drawing.Point(56, 35)
         Me.blueRadioButton.Name = "blueRadioButton"
-        Me.blueRadioButton.Size = New System.Drawing.Size(86, 29)
+        Me.blueRadioButton.Size = New System.Drawing.Size(57, 21)
         Me.blueRadioButton.TabIndex = 0
         Me.blueRadioButton.TabStop = True
         Me.blueRadioButton.Text = "Blue"
@@ -182,11 +169,10 @@ Partial Class setupMenuForm
         '
         Me.chooseFirstplayerGroupBox.Controls.Add(Me.player2RadioButton)
         Me.chooseFirstplayerGroupBox.Controls.Add(Me.player1RadioButton)
-        Me.chooseFirstplayerGroupBox.Location = New System.Drawing.Point(47, 344)
-        Me.chooseFirstplayerGroupBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.chooseFirstplayerGroupBox.Controls.Add(Me.chooseDifficultyGroupBox)
+        Me.chooseFirstplayerGroupBox.Location = New System.Drawing.Point(21, 35)
         Me.chooseFirstplayerGroupBox.Name = "chooseFirstplayerGroupBox"
-        Me.chooseFirstplayerGroupBox.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.chooseFirstplayerGroupBox.Size = New System.Drawing.Size(303, 211)
+        Me.chooseFirstplayerGroupBox.Size = New System.Drawing.Size(202, 135)
         Me.chooseFirstplayerGroupBox.TabIndex = 16
         Me.chooseFirstplayerGroupBox.TabStop = False
         Me.chooseFirstplayerGroupBox.Text = "Who will go first?"
@@ -194,10 +180,9 @@ Partial Class setupMenuForm
         'player2RadioButton
         '
         Me.player2RadioButton.AutoSize = True
-        Me.player2RadioButton.Location = New System.Drawing.Point(74, 94)
-        Me.player2RadioButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.player2RadioButton.Location = New System.Drawing.Point(49, 60)
         Me.player2RadioButton.Name = "player2RadioButton"
-        Me.player2RadioButton.Size = New System.Drawing.Size(120, 29)
+        Me.player2RadioButton.Size = New System.Drawing.Size(80, 21)
         Me.player2RadioButton.TabIndex = 5
         Me.player2RadioButton.TabStop = True
         Me.player2RadioButton.Text = "player 2"
@@ -206,10 +191,9 @@ Partial Class setupMenuForm
         'player1RadioButton
         '
         Me.player1RadioButton.AutoSize = True
-        Me.player1RadioButton.Location = New System.Drawing.Point(74, 52)
-        Me.player1RadioButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.player1RadioButton.Location = New System.Drawing.Point(49, 33)
         Me.player1RadioButton.Name = "player1RadioButton"
-        Me.player1RadioButton.Size = New System.Drawing.Size(120, 29)
+        Me.player1RadioButton.Size = New System.Drawing.Size(80, 21)
         Me.player1RadioButton.TabIndex = 4
         Me.player1RadioButton.TabStop = True
         Me.player1RadioButton.Text = "player 1"
@@ -218,18 +202,16 @@ Partial Class setupMenuForm
         'setupMenuForm
         '
         Me.AcceptButton = Me.enterButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.backButton
-        Me.ClientSize = New System.Drawing.Size(1158, 796)
+        Me.ClientSize = New System.Drawing.Size(440, 257)
         Me.ControlBox = False
         Me.Controls.Add(Me.chooseFirstplayerGroupBox)
         Me.Controls.Add(Me.chooseColorGroupBox)
-        Me.Controls.Add(Me.chooseDifficultyGroupBox)
         Me.Controls.Add(Me.enterButton)
         Me.Controls.Add(Me.backButton)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "setupMenuForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Settings "
