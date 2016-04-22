@@ -71,10 +71,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="boardClass.vb" />
-    <Compile Include="Form1.designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="GameBoard1.Designer.vb">
+      <DependentUpon>GameBoard1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="GameBoard1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.designer.vb">
+      <DependentUpon>Registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="loginForm.Designer.vb">
@@ -121,8 +127,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="GameBoard1.resx">
+      <DependentUpon>GameBoard1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.vb</DependentUpon>
@@ -157,6 +166,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Darth_Vader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

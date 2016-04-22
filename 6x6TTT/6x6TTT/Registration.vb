@@ -1,6 +1,6 @@
 ﻿Imports System.IO
 
-Public Class Form1
+Public Class Registration
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim Sr As New StreamReader("nameofuser.txt")
