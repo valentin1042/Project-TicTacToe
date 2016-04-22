@@ -1,5 +1,5 @@
 ﻿Public Class boardClass
-    Private vaderFlag As Integer
+    Public vaderFlag As Integer
     Private stone(2) As String
     Private board(6, 6) As Integer
     Public player1 As playerClass = New playerClass()

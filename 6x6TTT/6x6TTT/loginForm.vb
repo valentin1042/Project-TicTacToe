@@ -153,4 +153,7 @@
     '3. Testing 
 
 
+    Private Sub loginMenuForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
