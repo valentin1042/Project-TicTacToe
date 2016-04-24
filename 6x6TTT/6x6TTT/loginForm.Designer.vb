@@ -32,20 +32,18 @@ Partial Class loginMenuForm
         '
         'usernameTextBox
         '
-        Me.usernameTextBox.Location = New System.Drawing.Point(58, 98)
-        Me.usernameTextBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.usernameTextBox.Location = New System.Drawing.Point(39, 63)
         Me.usernameTextBox.MaxLength = 25
         Me.usernameTextBox.Name = "usernameTextBox"
-        Me.usernameTextBox.Size = New System.Drawing.Size(212, 31)
+        Me.usernameTextBox.Size = New System.Drawing.Size(143, 22)
         Me.usernameTextBox.TabIndex = 0
         '
         'guestRadioButton
         '
         Me.guestRadioButton.AutoSize = True
-        Me.guestRadioButton.Location = New System.Drawing.Point(58, 181)
-        Me.guestRadioButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.guestRadioButton.Location = New System.Drawing.Point(39, 116)
         Me.guestRadioButton.Name = "guestRadioButton"
-        Me.guestRadioButton.Size = New System.Drawing.Size(106, 29)
+        Me.guestRadioButton.Size = New System.Drawing.Size(71, 21)
         Me.guestRadioButton.TabIndex = 1
         Me.guestRadioButton.TabStop = True
         Me.guestRadioButton.Text = "Guest "
@@ -53,10 +51,9 @@ Partial Class loginMenuForm
         '
         'enterButton
         '
-        Me.enterButton.Location = New System.Drawing.Point(345, 208)
-        Me.enterButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.enterButton.Location = New System.Drawing.Point(230, 133)
         Me.enterButton.Name = "enterButton"
-        Me.enterButton.Size = New System.Drawing.Size(112, 50)
+        Me.enterButton.Size = New System.Drawing.Size(75, 32)
         Me.enterButton.TabIndex = 4
         Me.enterButton.Text = "Enter"
         Me.enterButton.UseVisualStyleBackColor = True
@@ -64,10 +61,9 @@ Partial Class loginMenuForm
         'backButton
         '
         Me.backButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.backButton.Location = New System.Drawing.Point(345, 47)
-        Me.backButton.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.backButton.Location = New System.Drawing.Point(230, 30)
         Me.backButton.Name = "backButton"
-        Me.backButton.Size = New System.Drawing.Size(112, 47)
+        Me.backButton.Size = New System.Drawing.Size(75, 30)
         Me.backButton.TabIndex = 5
         Me.backButton.Text = "Back"
         Me.backButton.UseVisualStyleBackColor = True
@@ -75,31 +71,28 @@ Partial Class loginMenuForm
         'errorLabel
         '
         Me.errorLabel.AutoSize = True
-        Me.errorLabel.Location = New System.Drawing.Point(58, 147)
-        Me.errorLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.errorLabel.Location = New System.Drawing.Point(12, 172)
         Me.errorLabel.Name = "errorLabel"
-        Me.errorLabel.Size = New System.Drawing.Size(181, 25)
+        Me.errorLabel.Size = New System.Drawing.Size(86, 17)
         Me.errorLabel.TabIndex = 6
-        Me.errorLabel.Text = "Invalid username "
-        Me.errorLabel.Visible = False
+        Me.errorLabel.Text = "Remove text"
         '
         'enterUsernameLabel
         '
         Me.enterUsernameLabel.AutoSize = True
-        Me.enterUsernameLabel.Location = New System.Drawing.Point(63, 69)
-        Me.enterUsernameLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.enterUsernameLabel.Location = New System.Drawing.Point(42, 44)
         Me.enterUsernameLabel.Name = "enterUsernameLabel"
-        Me.enterUsernameLabel.Size = New System.Drawing.Size(164, 25)
+        Me.enterUsernameLabel.Size = New System.Drawing.Size(109, 17)
         Me.enterUsernameLabel.TabIndex = 7
         Me.enterUsernameLabel.Text = "Enter username"
         '
         'loginMenuForm
         '
         Me.AcceptButton = Me.enterButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.backButton
-        Me.ClientSize = New System.Drawing.Size(561, 364)
+        Me.ClientSize = New System.Drawing.Size(374, 246)
         Me.ControlBox = False
         Me.Controls.Add(Me.enterUsernameLabel)
         Me.Controls.Add(Me.errorLabel)
@@ -108,7 +101,6 @@ Partial Class loginMenuForm
         Me.Controls.Add(Me.guestRadioButton)
         Me.Controls.Add(Me.usernameTextBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "loginMenuForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Log in"

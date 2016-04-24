@@ -38,3 +38,4 @@ C:\Users\Alfredo\Desktop\Github Stuff\New folder\Project-TicTacToe\6x6TTT\6x6TTT
 C:\Users\Alfredo\Desktop\Github Stuff\New folder\Project-TicTacToe\6x6TTT\6x6TTT\bin\Debug\6x6TTT.exe
 C:\Users\Alfredo\Desktop\Github Stuff\New folder\Project-TicTacToe\6x6TTT\6x6TTT\bin\Debug\6x6TTT.pdb
 C:\Users\Alfredo\Desktop\Github Stuff\New folder\Project-TicTacToe\6x6TTT\6x6TTT\bin\Debug\6x6TTT.xml
+C:\Users\valentin\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\_6x6TTT.GameBoard1.resources
