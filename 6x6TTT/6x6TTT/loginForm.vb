@@ -39,6 +39,7 @@
             loginSucess = GameBoard1.Board.player1.Login(username)
             If loginSucess Then
                 username1 = username
+                usernameTextBox.Clear()
                 count -= 1
             End If
         ElseIf count = 1 Then

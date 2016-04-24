@@ -27,7 +27,6 @@ Public Class playerClass
         noFlag = 0
         Dim StrdUsername As String = ""
         Dim NewUsername As String = ""
-        Dim users(20) As String
         'BEGINHERE:
 
         '        If (NewUsername = "") Then
@@ -57,6 +56,7 @@ Public Class playerClass
             MsgBox(" REGISTRATION WAS SUCESSFUL!" & ControlChars.CrLf & " THANK YOU FOR REGISTERING." & ControlChars.CrLf & " ENJOY THE GAME!")
         End If
     End Sub
+
     'Log in
     'Lets player login with username
     'Procedure:
@@ -68,15 +68,27 @@ Public Class playerClass
     'Returns:
     '   True if username is found
     Public Function Login(ByVal username As String)
+
         Try
-            Dim usernameFile = IO.File.ReadAllText("nameofuser.txt")
-            Dim lookFor As String = username.ToUpper()
-            If usernameFile.Contains(lookFor) Then
-                name = username
+            Dim usernameFile As New System.IO.StreamReader("nameofuser.txt")
+            Dim numberofUsers = 0, yesFlag = 0, noFlag As Integer = 0
+            Dim StrdUsername As String = ""
+            Dim NewUsername As String = username.ToUpper()
+            Do Until usernameFile.Peek = -1
+                StrdUsername = usernameFile.ReadLine().ToUpper()
+                If StrdUsername = NewUsername Then
+                    yesFlag += 1
+                Else
+                    noFlag = 0
+                End If
+                numberofUsers += 1
+            Loop
+            If (yesFlag > 0) Then
                 loginMenuForm.errorLabel.Text = "Username found."
+                name = username
                 Return True
             Else
-                loginMenuForm.errorLabel.Text = "Username not found. Please register or play as guest."
+                MsgBox("Username not found." & ControlChars.CrLf & "Please register or play as guest")
                 Return False
             End If
         Catch
