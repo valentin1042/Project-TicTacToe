@@ -13,7 +13,7 @@
         Try
             Dim mauro As System.IO.StreamReader
             ' Dim strFilename As String ' File name
-            Dim strFriend As String     ' Name of a friend
+            Dim strFriend As String     ' Name of a player
             Dim strPhone As String      ' To hold a phone number
             Dim intCount As Integer     ' Loop counter
             ' Open the file.
