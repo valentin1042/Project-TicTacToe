@@ -1,8 +1,8 @@
 ﻿Public Class loginMenuForm
     Private count As Integer = 0
-    Private username As String
+    Public username As String
     Private guest As Boolean = False
-
+    Private nameError As Boolean
     'back button
     'Allows player to return to the main menu
     'Procedure:
@@ -28,55 +28,64 @@
     '   Message indicating if valid username
     Private Sub enterButton_Click(sender As Object, e As EventArgs) Handles enterButton.Click
 
-        searchFile()
-
-        If errorLabel.Visible Then
-            errorLabel.Text = "Enter username"
-        Else
+        If Not nameError Then
             If count = 2 Then
-                If guest Then
-                    'setupMenuForm.player1RadioButton.Text = "guest"
-                    mainMenuForm.Board.player1.name = "guest"
-                Else
-                    'Open text file 
-                    'Search text file 
-                    'If found then return true 
-                    'player.name = username
-                    'setupMenuForm.player1RadioButton.Text = username
-                    mainMenuForm.Board.player1.name = username
-                End If
+                mainMenuForm.Board.player1.Login()
                 count -= 1
-                usernameTextBox.Text = ""
-                ''Me.Hide()
             ElseIf count = 1 Then
-                ''Me.Show()
-                If guest Then
-                    'mainMenuForm.Board.player2.name = "guest"
-                    'setupMenuForm.player2RadioButton.Text = "guest"
-                    mainMenuForm.Board.player2.name = "guest"
-                Else
-                    ''Open text file 
-                    ''Search text file 
-                    ''If found then return true 
-                    mainMenuForm.Board.player2.name = username
-                    'setupMenuForm.player2RadioButton.Text = username
-                End If
-                Me.Close()
-                setupMenuForm.Show()
+                mainMenuForm.Board.player2.Login()
+                count -= 1
             End If
         End If
-        If Me.Text = "Register" Then
-            Using usernameFile As New System.IO.StreamWriter("username.txt")
-                usernameFile.WriteLine(username)
-            End Using
-        End If
+        'searchFile()
+
+        'If errorLabel.Visible Then
+        '    errorLabel.Text = "Enter username"
+        'Else
+        '    If count = 2 Then
+        '        If guest Then
+        '            'setupMenuForm.player1RadioButton.Text = "guest"
+        '            mainMenuForm.Board.player1.name = "guest"
+        '        Else
+        '            'Open text file 
+        '            'Search text file 
+        '            'If found then return true 
+        '            'player.name = username
+        '            'setupMenuForm.player1RadioButton.Text = username
+        '            mainMenuForm.Board.player1.name = username
+        '        End If
+        '        count -= 1
+        '        usernameTextBox.Text = ""
+        '        ''Me.Hide()
+        '    ElseIf count = 1 Then
+        '        ''Me.Show()
+        '        If guest Then
+        '            'mainMenuForm.Board.player2.name = "guest"
+        '            'setupMenuForm.player2RadioButton.Text = "guest"
+        '            mainMenuForm.Board.player2.name = "guest"
+        '        Else
+        '            ''Open text file 
+        '            ''Search text file 
+        '            ''If found then return true 
+        '            mainMenuForm.Board.player2.name = username
+        '            'setupMenuForm.player2RadioButton.Text = username
+        '        End If
+        '        Me.Close()
+        '        setupMenuForm.Show()
+        '    End If
+        'End If
+        'If Me.Text = "Register" Then
+        '    Using usernameFile As New System.IO.StreamWriter("username.txt")
+        '        usernameFile.WriteLine(username)
+        '    End Using
+        'End If
     End Sub
 
     'usernameTextBox
     'Allows player to enter username
     'Procedure:
-    '   player enters username
-    '   if valid sets the username to name of player 
+    '   Player enters username
+    '   If valid sets the username to name of player 
     'Returns: 
     '   message indicating if username is valid
     Private Sub usernameTextBox_TextChanged(sender As Object, e As EventArgs) Handles usernameTextBox.TextChanged
@@ -84,12 +93,15 @@
             guestRadioButton.Checked = False
             username = usernameTextBox.Text
             If username = "Vader" Or username = "vader" Or username = "" Or "guest" Then
-                errorLabel.Visible = True
+                errorLabel.Text = "Invalid username."
+                nameError = True
             Else
                 errorLabel.Visible = False
+                nameError = False
             End If
         Catch
             errorLabel.Visible = True
+            nameError = True
         End Try
 
     End Sub
@@ -120,6 +132,7 @@
             If usernameFile.Contains(lookfor) Then
                 errorLabel.Text = "Username found"
                 errorLabel.Visible = False
+
             Else
                 errorLabel.Text = "Username not found"
                 errorLabel.Visible = True
@@ -140,4 +153,7 @@
     '3. Testing 
 
 
+    Private Sub loginMenuForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
