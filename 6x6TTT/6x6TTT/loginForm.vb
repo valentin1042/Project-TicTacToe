@@ -31,74 +31,32 @@
     'Return:
     '   Message indicating if valid username
     Private Sub enterButton_Click(sender As Object, e As EventArgs) Handles enterButton.Click
-        'If Not nameError Then
-        username = usernameTextBox.Text
-        If count = 3 Then
-            GameBoard1.Board.player1.Register(username)
-        ElseIf count = 2 Then
-            loginSucess = GameBoard1.Board.player1.Login(username)
-            If loginSucess Then
-                username1 = username
-                usernameTextBox.Clear()
-                count -= 1
-            End If
-        ElseIf count = 1 Then
-            If username = username1 Then
-                errorLabel.Text = "Enter different username."
-            Else
-                loginSucess = GameBoard1.Board.player2.Login(username)
+        If Not nameError Then
+            username = usernameTextBox.Text
+            If count = 3 Then
+                GameBoard1.Board.player1.Register(username)
+            ElseIf count = 2 Then
+                loginSucess = GameBoard1.Board.player1.Login(username)
                 If loginSucess Then
-                    MsgBox("Now choose your settings.")
-                    Me.Close()
-                    setupMenuForm.Show()
+                    username1 = username
+                    usernameTextBox.Clear()
+                    count -= 1
+                End If
+            ElseIf count = 1 Then
+                If username = username1 Then
+                    errorLabel.Text = "Enter different username."
+                Else
+                    loginSucess = GameBoard1.Board.player2.Login(username)
+                    If loginSucess Then
+                        MsgBox("Now choose your settings.")
+                        Me.Close()
+                        setupMenuForm.Show()
+                    End If
                 End If
             End If
+        Else
+            errorLabel.Text = "Invalid username."
         End If
-        'Else
-        'errorLabel.Text = "Invalid username."
-        'End If
-        'searchFile()
-
-        'If errorLabel.Visible Then
-        '    errorLabel.Text = "Enter username"
-        'Else
-        '    If count = 2 Then
-        '        If guest Then
-        '            'setupMenuForm.player1RadioButton.Text = "guest"
-        '            mainMenuForm.Board.player1.name = "guest"
-        '        Else
-        '            'Open text file 
-        '            'Search text file 
-        '            'If found then return true 
-        '            'player.name = username
-        '            'setupMenuForm.player1RadioButton.Text = username
-        '            mainMenuForm.Board.player1.name = username
-        '        End If
-        '        count -= 1
-        '        usernameTextBox.Text = ""
-        '        ''Me.Hide()
-        '    ElseIf count = 1 Then
-        '        ''Me.Show()
-        '        If guest Then
-        '            'mainMenuForm.Board.player2.name = "guest"
-        '            'setupMenuForm.player2RadioButton.Text = "guest"
-        '            mainMenuForm.Board.player2.name = "guest"
-        '        Else
-        '            ''Open text file 
-        '            ''Search text file 
-        '            ''If found then return true 
-        '            mainMenuForm.Board.player2.name = username
-        '            'setupMenuForm.player2RadioButton.Text = username
-        '        End If
-        '        Me.Close()
-        '        setupMenuForm.Show()
-        '    End If
-        'End If
-        'If Me.Text = "Register" Then
-        '    Using usernameFile As New System.IO.StreamWriter("username.txt")
-        '        usernameFile.WriteLine(username)
-        '    End Using
-        'End If
     End Sub
 
     'usernameTextBox
@@ -110,20 +68,19 @@
     'Returns: 
     '   Message indicating if username is invalid
     Private Sub usernameTextBox_TextChanged(sender As Object, e As EventArgs) Handles usernameTextBox.TextChanged
-        guestRadioButton.Checked = False
-        'Try
-        '    guestRadioButton.Checked = False
-        '    username = usernameTextBox.Text
-        '    If username = "Vader" Or username = "vader\n" Or username = "" Or username = "guest\n" Then
-        '        nameError = True
-        '    Else
-        '        errorLabel.Text = ""
-        '        nameError = False
-        '    End If
-        'Catch
-        '    errorLabel.Text = "Error"
-        '    nameError = True
-        'End Try
+
+        Try
+            username = usernameTextBox.Text.ToUpper()
+            If username.Contains("VADER") Or username.Length = 0 Or username.Contains(" ") Then
+                nameError = True
+            Else
+                errorLabel.Text = ""
+                nameError = False
+            End If
+        Catch
+            errorLabel.Text = "Error"
+            nameError = True
+        End Try
     End Sub
 
     'setCount
@@ -147,33 +104,9 @@
     Private Sub usernameTextBox_GotFocus(sender As Object, e As EventArgs) Handles usernameTextBox.GotFocus
         guestRadioButton.Checked = False
     End Sub
-    'Private Sub searchFile()
-    '    Try
-    '        Dim usernameFile = IO.File.ReadAllText("username.txt")
-    '        Dim lookfor As String = username
-    '        If usernameFile.Contains(lookfor) Then
-    '            errorLabel.Text = "Username found"
-    '            errorLabel.Visible = False
-
-    '        Else
-    '            errorLabel.Text = "Username not found"
-    '            errorLabel.Visible = True
-    '        End If
-    '        'Using usernameFile As New System.IO.StreamWriter("username.txt")
-    '        '    usernameFile.WriteLine(username)
-    '        'End Using
-    '    Catch
-    '        errorLabel.Text = "Error with file"
-
-    '    End Try
-
-    'End Sub
-
     'Things left to do 
     '1. Make function to look for username in file 
     '2. Error handling vader and guest as username
     '3. Testing 
-
-
 
 End Class
