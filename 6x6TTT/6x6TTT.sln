@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "6x6TTT", "6x6TTT\6x6TTT.vbproj", "{80B6AC14-0B02-4076-9BCA-67829102FABA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0F2FBDDB-31C2-4399-B472-07664868F02F}"
-	ProjectSection(SolutionItems) = preProject
-		Vader.txt = Vader.txt
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
