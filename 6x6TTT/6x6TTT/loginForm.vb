@@ -16,10 +16,6 @@
         Me.Close()
         mainMenuForm.Show()
     End Sub
-    Public Sub setType(ByVal ty As String)
-        type = ty
-    End Sub
-
     'enter button
     'Checks if player entered username or checked play as guest
     'Procedure:
