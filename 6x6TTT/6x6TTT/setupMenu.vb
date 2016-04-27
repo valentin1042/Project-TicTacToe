@@ -33,32 +33,24 @@
             If player1RadioButton.Checked Then
                 'Sets the name of the players in the gameboard
                 GameBoard1.Board.setPlayer(player1RadioButton.Text, player2RadioButton.Text)                                 'setPlayer(player1.name, player2.name)
+                chooseColorGroupBox.Text = GameBoard1.Board.player1.name + " choose your color."
 
                 'This if statement changes chooseColorGroupbox.text to show the name of the player
                 'Ex: "Player.name choose your color"
                 If GameBoard1.Board.player1.name = "Vader" Then
                     chooseColorGroupBox.Text = GameBoard1.Board.player2.name + " choose your color."
-                Else
-                    chooseColorGroupBox.Text = GameBoard1.Board.player1.name + " choose your color."
                 End If
 
             ElseIf player2RadioButton.Checked Then
 
                 'Sets the name of the players in the gameboard
                 GameBoard1.Board.setPlayer(player2RadioButton.Text, player1RadioButton.Text)                                 'setPlayer(player1.name, player2.name)
-
-                'This if statement changes chooseColorGroupbox.text to show the name of the player depending on which player is Vader 
-                'Ex: "Player.name choose your color"
-                If GameBoard1.Board.player2.name = "Vader" Then
-                    chooseColorGroupBox.Text = GameBoard1.Board.player1.name + " choose your color."
-                Else
-                    chooseColorGroupBox.Text = GameBoard1.Board.player2.name + " choose your color."
-                End If
+                chooseColorGroupBox.Text = GameBoard1.Board.player1.name + " choose your color."
 
             End If
 
             'If Vader is in any radio button then display the difficulty groupbox 
-            If player2RadioButton.Text = "Vader" Or player1RadioButton.Text = "Vader" Then
+            If player1RadioButton.Text = "Vader" Then
 
                 chooseFirstplayerGroupBox.Visible = False
                 chooseDifficultyGroupBox.Visible = True
@@ -121,7 +113,7 @@
 
                     colorCount -= 1                  'Decrease the number of colors to be choosen by 1 
 
-       
+
 
                 ElseIf redRadioButton.Checked Then
 
@@ -131,7 +123,7 @@
 
                     colorCount -= 1                  'Decrease the number of colors to be choosen by 1 
 
- 
+
                 End If
 
             End If

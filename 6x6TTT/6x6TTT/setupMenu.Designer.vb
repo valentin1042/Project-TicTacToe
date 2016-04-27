@@ -65,7 +65,7 @@ Partial Class setupMenuForm
         Me.chooseDifficultyGroupBox.Controls.Add(Me.hardRadioButton)
         Me.chooseDifficultyGroupBox.Controls.Add(Me.medRadioButton)
         Me.chooseDifficultyGroupBox.Controls.Add(Me.easyRadioButton)
-        Me.chooseDifficultyGroupBox.Location = New System.Drawing.Point(0, 3)
+        Me.chooseDifficultyGroupBox.Location = New System.Drawing.Point(21, 243)
         Me.chooseDifficultyGroupBox.Name = "chooseDifficultyGroupBox"
         Me.chooseDifficultyGroupBox.Size = New System.Drawing.Size(211, 126)
         Me.chooseDifficultyGroupBox.TabIndex = 14
@@ -169,8 +169,7 @@ Partial Class setupMenuForm
         '
         Me.chooseFirstplayerGroupBox.Controls.Add(Me.player2RadioButton)
         Me.chooseFirstplayerGroupBox.Controls.Add(Me.player1RadioButton)
-        Me.chooseFirstplayerGroupBox.Controls.Add(Me.chooseDifficultyGroupBox)
-        Me.chooseFirstplayerGroupBox.Location = New System.Drawing.Point(21, 35)
+        Me.chooseFirstplayerGroupBox.Location = New System.Drawing.Point(437, 48)
         Me.chooseFirstplayerGroupBox.Name = "chooseFirstplayerGroupBox"
         Me.chooseFirstplayerGroupBox.Size = New System.Drawing.Size(202, 135)
         Me.chooseFirstplayerGroupBox.TabIndex = 16
@@ -205,11 +204,12 @@ Partial Class setupMenuForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.backButton
-        Me.ClientSize = New System.Drawing.Size(440, 257)
+        Me.ClientSize = New System.Drawing.Size(755, 481)
         Me.ControlBox = False
         Me.Controls.Add(Me.chooseFirstplayerGroupBox)
         Me.Controls.Add(Me.chooseColorGroupBox)
         Me.Controls.Add(Me.enterButton)
+        Me.Controls.Add(Me.chooseDifficultyGroupBox)
         Me.Controls.Add(Me.backButton)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "setupMenuForm"
