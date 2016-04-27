@@ -22,6 +22,7 @@ C:\Users\valentin\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\6x6
 C:\Users\valentin\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\_6x6TTT.loginMenuForm.resources
 C:\Users\valentin\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\_6x6TTT.scoreMenuForm.resources
 C:\Users\valentin\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\_6x6TTT.setupMenuForm.resources
+<<<<<<< HEAD
 C:\Users\valentin\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\_6x6TTT.Form1.resources
 C:\Users\Alfredo\Desktop\Github Stuff\New folder\Project-TicTacToe\6x6TTT\6x6TTT\bin\Debug\6x6TTT.exe.config
 C:\Users\Alfredo\Desktop\Github Stuff\New folder\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\6x6TTT.exe
@@ -38,4 +39,22 @@ C:\Users\Alfredo\Desktop\Github Stuff\New folder\Project-TicTacToe\6x6TTT\6x6TTT
 C:\Users\Alfredo\Desktop\Github Stuff\New folder\Project-TicTacToe\6x6TTT\6x6TTT\bin\Debug\6x6TTT.exe
 C:\Users\Alfredo\Desktop\Github Stuff\New folder\Project-TicTacToe\6x6TTT\6x6TTT\bin\Debug\6x6TTT.pdb
 C:\Users\Alfredo\Desktop\Github Stuff\New folder\Project-TicTacToe\6x6TTT\6x6TTT\bin\Debug\6x6TTT.xml
+<<<<<<< HEAD
 C:\Users\valentin\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\_6x6TTT.GameBoard1.resources
+=======
+=======
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\bin\Debug\6x6TTT.exe.config
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\6x6TTT.exe
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\6x6TTT.xml
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\6x6TTT.pdb
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\bin\Debug\6x6TTT.exe
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\bin\Debug\6x6TTT.pdb
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\bin\Debug\6x6TTT.xml
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\_6x6TTT.loginMenuForm.resources
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\_6x6TTT.mainMenuForm.resources
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\_6x6TTT.Resources.resources
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\_6x6TTT.scoreMenuForm.resources
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\_6x6TTT.setupMenuForm.resources
+C:\Users\Sean\Documents\GitHub\Project-TicTacToe\6x6TTT\6x6TTT\obj\Debug\6x6TTT.vbproj.GenerateResource.Cache
+>>>>>>> refs/remotes/origin/master
+>>>>>>> origin/master

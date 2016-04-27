@@ -213,7 +213,7 @@
 
                 Loop While flagFound = False
 
-            Case 5 To 10
+            Case 5 To 18
                 'Utilize 2 square offense from turns 5 to 10
 
                 For i As Integer = 0 To 5
@@ -256,58 +256,9 @@
                             End If
                         Next
                     End If
-                Next
-
-            Case 11 To 18
-                'Utilize 3 square offense from turns 11 to 18
-
-                For i As Integer = 0 To 5                               'For loop to step through the rows
-                    If i = 0 Or i = 3 Then                              'Only scan the first, third, and fourth rows
-                        For j As Integer = 0 To 5                       'Step'For loop to step through each column
-                            If board(i, j) = vaderTurn Then
-
-                                'Check to the right
-                                If board(i, j + 1) = vaderTurn And board(i, j + 2) = vaderTurn And
-                                    board(i, j + 3) = 0 Then
-
-                                    board(i, j + 3) = vaderTurn
-                                    loopFlag = True
-                                    Exit For
-                                End If
-
-                                'Check to the bottom right
-                                If board(i + 1, j + 1) = vaderTurn And board(i + 2, j + 2) = vaderTurn And
-                                    board(i + 3, j + 3) = 0 Then
-
-                                    board(i + 3, j + 3) = vaderTurn
-                                    loopFlag = True
-                                    Exit For
-                                End If
-
-                                'Check to the bottom left
-                                If board(i + 1, j - 1) = vaderTurn And board(i + 2, j - 2) = vaderTurn And
-                                    board(i + 3, j - 3) = 0 Then
-
-                                    board(i + 3, j - 3) = vaderTurn
-                                    loopFlag = True
-                                    Exit For
-                                End If
-
-                                'Check below
-                                If board(i + 1, j) = vaderTurn And board(i + 2, j) = vaderTurn And
-                                    board(i + 3, j) Then
-
-                                    board(i + 3, j) = vaderTurn
-                                    loopFlag = True
-                                    Exit For
-
-                                End If
-                            End If
-                        Next
-                    End If
 
                     If loopFlag Then
-                        'To exit the second loop
+                        'to exit the second loop
 
                         Exit For
                     End If
@@ -317,11 +268,12 @@
                 If loopFlag = False Then
                     'Loop to test for horizontle scoring on rows 1, 2, 4, and 5
                     'Only runs if a suitable position isnt found above
+
                     For x As Integer = 0 To 5
                         If x = 1 Or x = 2 Or x = 4 Or x = 5 Then
                             For y As Integer = 0 To 5
-                                If board(x, y) = vaderTurn Then
-                                    If board(x, y + 1) = vaderTurn And board(x, y + 2) = 0 Then
+                                If board(x, y) = playerTurn Then
+                                    If board(x, y + 1) = playerTurn And board(x, y + 2) = 0 Then
                                         board(x, y + 2) = vaderTurn
                                         loopFlag = True
                                         Exit For
@@ -337,9 +289,9 @@
                     Next
                 End If
 
+                'this loop is a last resort random selection if the Vader cannot find a position in the above code
                 Do While flagFound = False
-                    'Do While loop to select a random position and check it for vader's selection. 
-                    'If position is taken the loop iterates again and checks a new position
+                    'Do While loop to select a random position and check it for vader's selection. If position is taken the loop iterates again and checks a new position
 
                     vaderMove1 = CInt(Math.Floor((5 - 0 + 1) * Rnd())) + 0
                     'assigns a random integer between and including 0 and 5
@@ -348,13 +300,109 @@
                     'assigns a random integer between and including 0 and 5
 
                     If board(vaderMove1, vaderMove2) = 0 Then
-
                         board(vaderMove1, vaderMove2) = vaderTurn
                         flagFound = True
-
                     End If
 
                 Loop
+
+                'Case 11 To 18
+                '    'Utilize 3 square offense from turns 11 to 18
+
+                '    For i As Integer = 0 To 5                               'For loop to step through the rows
+                '        If i = 0 Or i = 3 Then                              'Only scan the first, third, and fourth rows
+                '            For j As Integer = 0 To 5                       'Step'For loop to step through each column
+                '                If board(i, j) = vaderTurn Then
+
+                '                    'Check to the right
+                '                    If board(i, j + 1) = vaderTurn And board(i, j + 2) = vaderTurn And
+                '                        board(i, j + 3) = 0 Then
+
+                '                        board(i, j + 3) = vaderTurn
+                '                        loopFlag = True
+                '                        Exit For
+                '                    End If
+
+                '                    'Check to the bottom right
+                '                    If board(i + 1, j + 1) = vaderTurn And board(i + 2, j + 2) = vaderTurn And
+                '                        board(i + 3, j + 3) = 0 Then
+
+                '                        board(i + 3, j + 3) = vaderTurn
+                '                        loopFlag = True
+                '                        Exit For
+                '                    End If
+
+                '                    'Check to the bottom left
+                '                    If board(i + 1, j - 1) = vaderTurn And board(i + 2, j - 2) = vaderTurn And
+                '                        board(i + 3, j - 3) = 0 Then
+
+                '                        board(i + 3, j - 3) = vaderTurn
+                '                        loopFlag = True
+                '                        Exit For
+                '                    End If
+
+                '                    'Check below
+                '                    If board(i + 1, j) = vaderTurn And board(i + 2, j) = vaderTurn And
+                '                        board(i + 3, j) Then
+
+                '                        board(i + 3, j) = vaderTurn
+                '                        loopFlag = True
+                '                        Exit For
+
+                '                    End If
+                '                End If
+                '            Next
+                '        End If
+
+                '        If loopFlag Then
+                '            'To exit the second loop
+
+                '            Exit For
+                '        End If
+
+                '    Next
+
+                '    If loopFlag = False Then
+                '        'Loop to test for horizontle scoring on rows 1, 2, 4, and 5
+                '        'Only runs if a suitable position isnt found above
+                '        For x As Integer = 0 To 5
+                '            If x = 1 Or x = 2 Or x = 4 Or x = 5 Then
+                '                For y As Integer = 0 To 5
+                '                    If board(x, y) = vaderTurn Then
+                '                        If board(x, y + 1) = vaderTurn And board(x, y + 2) = 0 Then
+                '                            board(x, y + 2) = vaderTurn
+                '                            loopFlag = True
+                '                            Exit For
+                '                        End If
+                '                    End If
+                '                Next
+                '            End If
+
+                '            If loopFlag Then
+                '                Exit For
+                '            End If
+
+                '        Next
+                '    End If
+
+                '    Do While flagFound = False
+                '        'Do While loop to select a random position and check it for vader's selection. 
+                '        'If position is taken the loop iterates again and checks a new position
+
+                '        vaderMove1 = CInt(Math.Floor((5 - 0 + 1) * Rnd())) + 0
+                '        'assigns a random integer between and including 0 and 5
+
+                '        vaderMove2 = CInt(Math.Floor((5 - 0 + 1) * Rnd())) + 0
+                '        'assigns a random integer between and including 0 and 5
+
+                '        If board(vaderMove1, vaderMove2) = 0 Then
+
+                '            board(vaderMove1, vaderMove2) = vaderTurn
+                '            flagFound = True
+
+                '        End If
+
+                '    Loop
 
             Case 18 To 36
                 'Utilize defense from turn 18 and on
