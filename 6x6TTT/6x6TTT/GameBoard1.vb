@@ -270,6 +270,7 @@
             PictureBox12.Visible = True
             If turnCounter Mod 2 = 0 Then
                 PictureBox12.Image = turn1PicBox.Image
+
             ElseIf turnCounter Mod 2 = 1 Then
                 PictureBox12.Image = turn2PicBox.Image
             End If
